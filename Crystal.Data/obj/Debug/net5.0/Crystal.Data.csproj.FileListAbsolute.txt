@@ -1,0 +1,17 @@
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\bin\Debug\net5.0\Crystal.Data.deps.json
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\bin\Debug\net5.0\Crystal.Data.runtimeconfig.json
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\bin\Debug\net5.0\Crystal.Data.runtimeconfig.dev.json
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\bin\Debug\net5.0\Crystal.Data.dll
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\bin\Debug\net5.0\ref\Crystal.Data.dll
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\bin\Debug\net5.0\Crystal.Data.pdb
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\bin\Debug\net5.0\Crystal.Domain.dll
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\bin\Debug\net5.0\Crystal.Domain.pdb
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\obj\Debug\net5.0\Crystal.Data.csproj.AssemblyReference.cache
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\obj\Debug\net5.0\Crystal.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\obj\Debug\net5.0\Crystal.Data.AssemblyInfoInputs.cache
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\obj\Debug\net5.0\Crystal.Data.AssemblyInfo.cs
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\obj\Debug\net5.0\Crystal.Data.csproj.CoreCompileInputs.cache
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\obj\Debug\net5.0\Crystal.Data.dll
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\obj\Debug\net5.0\ref\Crystal.Data.dll
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\obj\Debug\net5.0\Crystal.Data.pdb
+D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Data\obj\Debug\net5.0\Crystal.Data.genruntimeconfig.cache
