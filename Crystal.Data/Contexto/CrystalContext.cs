@@ -1,10 +1,6 @@
-﻿using Crystal.Domain.Entidades;
+﻿using Crystal.Data.FluentAPI;
+using Crystal.Domain.Entidades;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Crystal.Data.Contexto
 {
@@ -27,73 +23,15 @@ namespace Crystal.Data.Contexto
             //Configurar el schema
             modelBuilder.HasDefaultSchema("crystal");
 
-            #region Entidad_Empleados
-            //Configurar la entidad de Empleado
-            modelBuilder.Entity<Empleado>().ToTable("empleados");
+            modelBuilder.EmpleadosFluentAPI();
 
-                //Configurar la llave primarea
-            modelBuilder.Entity<Empleado>().HasKey(e => e.ID);
+            modelBuilder.DireccionFluentAPI();
 
-                //configurar las propiedades
-            modelBuilder.Entity<Empleado>().Property(p => p.Nombre).HasColumnName("Nombre").HasColumnType("Varchar").HasMaxLength(20).IsRequired();
-            modelBuilder.Entity<Empleado>().Property(p => p.Apellido).HasColumnName("Apellido").HasColumnType("Varchar").HasMaxLength(20).IsRequired();
-            modelBuilder.Entity<Empleado>().Property(p => p.Usuario).HasColumnName("Usuario").HasComputedColumnSql("[Nombre] + '.' + [Apellido]");
-            modelBuilder.Entity<Empleado>().Property(p => p.Correo).HasColumnName("Correo").HasComputedColumnSql("[Nombre] + '.' + [Apellido] + '@crystal.com.do'");
+            modelBuilder.PuestosFluentAPI();
 
-            #endregion
+            modelBuilder.DepartamentoFluentAPI();
 
-            #region Entidad_Direccion
-            //Configurar la entidad de Direccion
-            modelBuilder.Entity<Direccion>().ToTable("direccion");
-
-            //Configurar la llave primarea
-            modelBuilder.Entity<Direccion>().HasKey(d => d.ID);
-
-            //configurar las propiedades
-            modelBuilder.Entity<Direccion>().Property(p => p.Calle).HasColumnName("Calle").HasColumnType("Varchar").HasMaxLength(20);
-            modelBuilder.Entity<Direccion>().Property(p => p.Ciudad).HasColumnName("Ciudad").HasColumnType("Varchar").HasMaxLength(20).IsRequired();
-            modelBuilder.Entity<Direccion>().Property(p => p.Pais).HasColumnName("Pais").HasColumnType("Varchar").HasMaxLength(20).IsRequired();
-            modelBuilder.Entity<Direccion>().Property(p => p.Telefono).HasColumnName("Telefono").HasColumnType("Varchar").HasMaxLength(20);
-
-            #endregion
-
-            #region Entidad_Puestos
-            //Configurar la entidad de Direccion
-            modelBuilder.Entity<Puesto>().ToTable("puesto");
-
-            //Configurar la llave primarea
-            modelBuilder.Entity<Puesto>().HasKey(p => p.ID);
-
-            //configurar las propiedades
-            modelBuilder.Entity<Puesto>().Property(p => p.Rol).HasColumnName("Rol").HasColumnType("Varchar").HasMaxLength(20).IsRequired();
-            modelBuilder.Entity<Puesto>().Property(p => p.Sueldo).HasColumnName("Sueldo").HasColumnType("decimal").IsRequired();
-
-            #endregion
-
-            #region Entidad_Departamento
-            //Configurar la entidad de Direccion
-            modelBuilder.Entity<Departamento>().ToTable("departamento");
-
-            //Configurar la llave primarea
-            modelBuilder.Entity<Departamento>().HasKey(d => d.ID);
-
-            //configurar las propiedades
-            modelBuilder.Entity<Departamento>().Property(p => p.Nombre).HasColumnName("Nombre").HasColumnType("Varchar").HasMaxLength(20).IsRequired();
-
-            #endregion
-
-            #region Relaciones_Entre_Entidades
-            //Configurar las relaciones
-            //Configurar la relacion one-to-may con Empleado a Puestos
-            modelBuilder.Entity<Empleado>().HasOne<Puesto>(e => e.Puesto).WithMany(p => p.Empleados).HasForeignKey(e => e.PuestoId);
-
-            //Configurar la relacion one-to-one con Empleado a Direccion
-            modelBuilder.Entity<Empleado>().HasOne<Direccion>(e => e.Direccion).WithOne(d => d.Empleado).HasForeignKey<Direccion>(d => d.EmpleadoID);
-
-            //Configurar la relacion one-to-may con Puestos a Departamento
-            modelBuilder.Entity<Puesto>().HasOne<Departamento>(p => p.Departamento).WithMany(d => d.Puestos).HasForeignKey(p => p.DepartamentoID);
-
-            #endregion
+            modelBuilder.RelationshioFluentAPI();
         }
     }
 }
