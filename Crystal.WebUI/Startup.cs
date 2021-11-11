@@ -1,19 +1,11 @@
-using Crystal.AppService.Servicios.Implementacion;
-using Crystal.AppService.Servicios.interfaces;
 using Crystal.Data.Contexto;
-using Crystal.Data.Repositorios.Implementacion;
-using Crystal.Data.Repositorios.Interfaces;
+using Crystal.WebUI.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Crystal.WebUI
 {
@@ -33,17 +25,7 @@ namespace Crystal.WebUI
             services.AddControllersWithViews();
             services.AddDbContext<CrystalContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlConnectionString")));
 
-            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddScoped(typeof(IDepartamentoRepository), typeof(DepartamentoRepository));
-
-            services.AddScoped(typeof(IGenericService<>), typeof(GenericService<>));
-            services.AddScoped(typeof(IDepartamentoService), typeof(DepartamentoService));
-
-            services.AddScoped(typeof(IPuestoRepository), typeof(PuestoRepository));
-            services.AddScoped(typeof(IPuestoService), typeof(PuestoService));
-
-            services.AddScoped(typeof(IEmpleadoRepository), typeof(EmpleadoRepository));
-            services.AddScoped(typeof(IEmpleadoService), typeof(EmpleadoService));
+            services.Inyecciones();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -41,7 +41,7 @@ namespace Crystal.WebUI.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Rol,Sueldo,DepartamentoID")] Puesto puesto)
+        public async Task<IActionResult> Create(Puesto puesto)
         {
             if (!(ModelState.IsValid))
             {

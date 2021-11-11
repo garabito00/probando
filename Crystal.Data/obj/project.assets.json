@@ -5769,21 +5769,17 @@
     ]
   },
   "packageFolders": {
-    "D:\\USERDATA\\miguel.garabito\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "D:\\USERDATA\\miguel.garabito\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\USERDATA\\miguel.garabito\\source\\repos\\Crystal.WebUI\\Crystal.Data\\Crystal.Data.csproj",
+      "projectUniqueName": "D:\\USERDATA\\miguel.garabito\\Documents\\GitHub\\probando\\Crystal.Data\\Crystal.Data.csproj",
       "projectName": "Crystal.Data",
-      "projectPath": "D:\\USERDATA\\miguel.garabito\\source\\repos\\Crystal.WebUI\\Crystal.Data\\Crystal.Data.csproj",
+      "projectPath": "D:\\USERDATA\\miguel.garabito\\Documents\\GitHub\\probando\\Crystal.Data\\Crystal.Data.csproj",
       "packagesPath": "D:\\USERDATA\\miguel.garabito\\.nuget\\packages\\",
-      "outputPath": "D:\\USERDATA\\miguel.garabito\\source\\repos\\Crystal.WebUI\\Crystal.Data\\obj\\",
+      "outputPath": "D:\\USERDATA\\miguel.garabito\\Documents\\GitHub\\probando\\Crystal.Data\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "D:\\USERDATA\\miguel.garabito\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -5799,8 +5795,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\USERDATA\\miguel.garabito\\source\\repos\\Crystal.WebUI\\Crystal.Domain\\Crystal.Domain.csproj": {
-              "projectPath": "D:\\USERDATA\\miguel.garabito\\source\\repos\\Crystal.WebUI\\Crystal.Domain\\Crystal.Domain.csproj"
+            "D:\\USERDATA\\miguel.garabito\\Documents\\GitHub\\probando\\Crystal.Domain\\Crystal.Domain.csproj": {
+              "projectPath": "D:\\USERDATA\\miguel.garabito\\Documents\\GitHub\\probando\\Crystal.Domain\\Crystal.Domain.csproj"
             }
           }
         }
@@ -5841,7 +5837,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

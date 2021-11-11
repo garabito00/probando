@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Crystal.Domain
-build_property.ProjectDir = D:\USERDATA\miguel.garabito\source\repos\Crystal.WebUI\Crystal.Domain\
+build_property.ProjectDir = D:\USERDATA\miguel.garabito\Documents\GitHub\probando\Crystal.Domain\
