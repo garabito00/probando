@@ -31,7 +31,6 @@ Crystal.WebUI/obj/Debug/net5.0/Crystal.WebUI.RazorTargetAssemblyInfo.cs
 Crystal.WebUI/obj/Debug/net5.0/Crystal.WebUI.MvcApplicationPartsAssemblyInfo.cs
 Crystal.WebUI/obj/Debug/net5.0/Crystal.WebUI.RazorAssemblyInfo.cs
 Crystal.WebUI/obj/Debug/net5.0/apphost.exe
-Crystal.WebUI/Extensions/ExtensionToDependencyInjection.cs
 Crystal.WebUI/obj/Crystal.WebUI.csproj.nuget.g.props
 Crystal.WebUI/obj/Crystal.WebUI.csproj.nuget.g.targets
 Crystal.WebUI/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
